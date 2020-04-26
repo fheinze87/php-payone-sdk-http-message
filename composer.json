@@ -1,0 +1,61 @@
+{
+    "name": "cakasim/payone-sdk-http-message",
+    "description": "A PSR-7 and PSR-17 Implementation for the SDK for PAYONE Payment Integration.",
+    "type": "library",
+    "keywords": [
+        "payone",
+        "payment",
+        "sdk",
+        "psr-7",
+        "psr-17"
+    ],
+    "homepage": "https://cakasim.de",
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Böttcher",
+            "email": "me@cakasim.de",
+            "homepage": "https://cakasim.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@cakasim.de",
+        "issues": "https://github.com/Cakasim/php-payone-sdk-http-message/issues",
+        "source": "https://github.com/Cakasim/php-payone-sdk-http-message"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "psr/http-message": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cakasim\\Payone\\Sdk\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cakasim\\Payone\\Sdk\\Tests\\Http\\": "tests/"
+        }
+    },
+    "require-dev": {},
+    "scripts": {
+        "download-phpcsf": "curl --silent -L https://cs.symfony.com/download/php-cs-fixer-v2.phar --create-dirs --output vendor/bin/phpcsf.phar",
+        "download-phpstan": "curl --silent -L https://github.com/phpstan/phpstan/releases/download/0.12.19/phpstan.phar --create-dirs --output vendor/bin/phpstan.phar",
+        "download-phpunit": "curl --silent -L https://phar.phpunit.de/phpunit-8.phar --create-dirs --output vendor/bin/phpunit.phar",
+        "phpcsf": "php vendor/bin/phpcsf.phar -v fix --dry-run --allow-risky=yes",
+        "phpstan": "php vendor/bin/phpstan.phar analyse",
+        "phpunit": "php vendor/bin/phpunit.phar"
+    },
+    "scripts-descriptions": {
+        "download-phpcsf": "Downloads PHP Coding Standards Fixer and saves it to vendor/bin.",
+        "download-phpstan": "Downloads PHP Coding Standards Fixer and saves it to vendor/bin.",
+        "download-phpunit": "Downloads PHPUnit 8 and saves it to vendor/bin.",
+        "phpcsf": "Runs PHP Coding Standards Fixer to identify coding style issues.",
+        "phpstan": "Runs static code analysis to detect possible errors / bugs.",
+        "phpunit": "Runs the tests."
+    }
+}

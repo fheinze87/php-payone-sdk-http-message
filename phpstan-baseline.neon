@@ -1,0 +1,27 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Array \\(array\\<array\\<string\\>\\>\\) does not accept array\\<int, array\\|int\\|string\\>\\.$#"
+			count: 1
+			path: src/Message/AbstractMessage.php
+
+		-
+			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Http\\\\Message\\\\AbstractMessage\\:\\:getHeaders\\(\\) should return array\\<array\\<string\\>\\> but returns array\\<string, string\\>\\.$#"
+			count: 1
+			path: src/Message/AbstractMessage.php
+
+		-
+			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Http\\\\Message\\\\AbstractMessage\\:\\:getHeader\\(\\) should return array\\<string\\> but returns array\\|string\\.$#"
+			count: 1
+			path: src/Message/AbstractMessage.php
+
+		-
+			message: "#^Array \\(array\\<array\\<string\\>\\>\\) does not accept array\\<int, array\\<string\\>\\|string\\>\\.$#"
+			count: 1
+			path: src/Message/AbstractMessage.php
+
+		-
+			message: "#^Cannot access offset string on array\\(0 \\=\\> int, 1 \\=\\> int, 2 \\=\\> int, 3 \\=\\> int, 4 \\=\\> int, 5 \\=\\> int, 6 \\=\\> int, 7 \\=\\> int, \\.\\.\\.\\)\\|false\\.$#"
+			count: 1
+			path: src/Message/Stream.php
+
