@@ -1,5 +1,5 @@
 {
-    "name": "cakasim/payone-sdk-http-message",
+    "name": "fheinze87/payone-sdk-http-message",
     "description": "A PSR-7 and PSR-17 Implementation for the SDK for PAYONE Payment Integration.",
     "type": "library",
     "keywords": [
@@ -27,7 +27,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.1",
+        "php": "^7.1|^8.1",
         "psr/http-message": "^1.0",
         "psr/http-factory": "^1.0"
     },
